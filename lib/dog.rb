@@ -6,10 +6,14 @@ class Dog
  
   attr_accessor :name
  
+  def self.create
+    @@all << self.new
+  end
+  
   def initialize(name)
     @name = name
     @@all << self
-    
+    @@all 
   end
  
   def self.all
