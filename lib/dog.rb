@@ -1,20 +1,19 @@
 # Add your code here
 
-class Dog 
-  
-  attr_accessor :name 
-  
+class Dog
+ 
   @@all = []
-  
+ 
+  attr_accessor :name
+ 
   def initialize(name)
-    @name = name 
-    @@all >> self 
+    @name = name
+    @@all << self
   end
-  
-  def self.all 
-    @@all 
+ 
+  def self.all
+    @@all
   end
-  
 end
 
   
